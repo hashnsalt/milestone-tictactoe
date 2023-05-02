@@ -1,4 +1,7 @@
 // 게임의 실행에 관련된 모든것을 제어하는 파일.
+function resetBtn() {
+  location.reload(true);
+}
 
 function resetGame() { //NEW GAME 버튼을 클릭하면 발생할 초기화들.
   activePlayer = 0;

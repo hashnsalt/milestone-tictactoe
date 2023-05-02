@@ -36,6 +36,7 @@ const editPlayer2Btn = document.getElementById('edit-player2');
 // document(객체)를 이용하여 버튼에 access
 const cancelConfigBtn = document.getElementById('cancel-config-btn');
 const startNewGameBtn = document.getElementById('start-game-btn');
+const resetGameBtn = document.getElementById('reset-game-btn');
 // const gameField = document.querySelectorAll('#game-board li');//방법1
 const gameBoard = document.getElementById('game-board');
 
@@ -66,3 +67,5 @@ startNewGameBtn.addEventListener('click', startNewGame);
 //방법2 위의 querySelectorAll을 사용하지 않고 id그대로 받아 쓸 수 있는 방법.
 gameBoard.addEventListener('click', selectGameField);
 //이렇게 만들어도 작동은 하지만 li들 사이의 간격(gap)을 누르면 gameField가 사라지고 해당 player들은 li field가 아닌 ol field 안에서 작동하게 된다.
+
+resetGameBtn.addEventListener('click', resetBtn);
